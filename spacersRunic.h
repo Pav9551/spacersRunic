@@ -1,5 +1,3 @@
-// see http://www.rinkydinkelectronics.com/t_imageconverter_mono.php
-// see http://www.projectrho.com/public_html/rocket/symbols.php
 #if defined(__AVR__)
     #include <avr/pgmspace.h>
     #define imagedatatype const uint8_t
@@ -36,3 +34,4 @@ extern imagedatatype conjuction[];
 extern imagedatatype tell[];
 extern imagedatatype no[];
 extern imagedatatype girl[];
+extern imagedatatype ninja[];
