@@ -1,15 +1,8 @@
-#if defined(__AVR__)
-    #include <avr/pgmspace.h>
-    #define imagedatatype const uint8_t
-#elif defined(__PIC32MX__)
-    #define PROGMEM
-    #define imagedatatype const unsigned char
-#elif defined(__arm__)
-    #define PROGMEM
-    #define imagedatatype const unsigned char
-#endif
+#define PROGMEM
+#define imagedatatype const char
+extern imagedatatype empty[];
 extern imagedatatype test_bound[];
-extern imagedatatype contue_on_next_line[];
+extern imagedatatype continue_on_next_line[];
 extern imagedatatype one[];
 extern imagedatatype two[];
 extern imagedatatype three[];
@@ -27,11 +20,36 @@ extern imagedatatype earth[];
 extern imagedatatype pull[];
 extern imagedatatype foward[];
 extern imagedatatype rotate_clokwise[];
+extern imagedatatype rotate_counter_clokwise[];
 extern imagedatatype near[];
 extern imagedatatype rotate_rigtht[];
 extern imagedatatype surround[];
 extern imagedatatype conjuction[];
 extern imagedatatype tell[];
 extern imagedatatype no[];
-extern imagedatatype girl[];
-extern imagedatatype ninja[];
+extern imagedatatype yes[];
+extern imagedatatype carbon[];
+extern imagedatatype go[];//paseala
+extern imagedatatype oxygen[];
+extern imagedatatype water[];
+extern imagedatatype here[];
+extern imagedatatype high[];
+extern imagedatatype middle[];
+extern imagedatatype low[];
+extern imagedatatype move_sr[];
+extern imagedatatype navigation[];
+extern imagedatatype small[];
+extern imagedatatype port[];//<
+extern imagedatatype starboard[];//>
+extern imagedatatype stern[];//v
+extern imagedatatype bow[];//^
+extern imagedatatype hand[];
+extern imagedatatype over[];
+extern imagedatatype arm[];
+extern imagedatatype check[];
+extern imagedatatype negation[];
+extern imagedatatype solar_cross[];
+extern imagedatatype hold[];
+extern imagedatatype orbit[];
+extern imagedatatype head[];
+extern imagedatatype stop_[];
