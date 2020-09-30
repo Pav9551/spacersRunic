@@ -476,4 +476,45 @@ void el_loco_complicato(SSD1306 display){
 
   display.clear(); 
   }
+
+
+void el_dedo(SSD1306 display){
+  str_4(display,18,empty,hand,empty,empty);
+  delay(4000);
+  display.clear();                             // Очищаем экран от предыдущих данных
+  display.setTextAlignment(TEXT_ALIGN_CENTER); // Выравниваем текст по центру
+  display.setFont(ArialMT_Plain_16);            // Стандартный шрифт из библиотеки
+  display.drawString(64, 8, "spacersRunic");
+  display.setFont(Chewy_24);                   // Подключаем созданный нами шрифт
+  //display.drawString(50, 8, "spacersRunic");      // Первая строка в координаты 64 по оси X и 8 по оси Y
+  display.drawString(64, 32, "El dedo");          // Вторая строка
+  display.display();                           // Выводим все на экран
+  delay(2000);
+  
+  str_4_1(display,empty,hand,continue_on_next_line,empty);
+  str_4_2(display,empty,mars,venus,empty);
+
+  str_4_1(display,empty,mars,venus,empty);
+  str_4_2(display,one,pull,foward,empty);
+
+  str_4_1(display,one,pull,foward,empty);
+  str_4_2(display,three,near,rotate_clokwise,empty);
+
+  str_4_1(display,three,near,rotate_clokwise,empty);
+  str_4_2(display,four,rotate_rigtht,rotate_clokwise,empty);
+  
+  str_4_1(display,four,rotate_rigtht,rotate_clokwise,empty);
+  str_4_2(display,one,surround,conjuction,empty);
+
+  str_4_1(display,one,surround,conjuction,empty);
+  str_4_2(display,five,rotate_clokwise,surround,empty);
+
+  str_4_1(display,five,rotate_clokwise,surround,empty);
+  str_4_2(display,one,tell,venus,no);
+
+  str_4_1(display,one,tell,venus,no);
+  str_4_2(display,continue_on_next_line,empty,empty,empty);
+
+  display.clear();
+}
   

@@ -25,6 +25,7 @@ void loop() {
    }*/ 
   setenta(display);
   sombrero_double(display);
+  el_dedo(display);
   el_dedo_complicato(display);
   //sombrero_con_enredo(display);
   roulette(display);
